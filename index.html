@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manoj Chaudhari</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --ink: #1a1a2e;
@@ -45,7 +48,7 @@
             max-width: 850px;
             margin: 30px auto;
             background: var(--bg);
-            box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
             border-radius: 2px;
         }
 
@@ -349,211 +352,308 @@
 
         /* ── PRINT ── */
         @media print {
-            html, body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; font-family: Arial;}
-            .resume-container { box-shadow: none; margin: 0; max-width: 100%; border-radius: 0; width: 100%; }
-            .header { padding: 24px 36px 18px; }
-            .body { padding: 20px 36px 28px; }
-            .ats-badge { display: none; }
+
+            html,
+            body {
+                background: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                font-family: Arial;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+                border-radius: 0;
+                width: 100%;
+            }
+
+            .header {
+                padding: 24px 36px 18px;
+            }
+
+            .body {
+                padding: 20px 36px 28px;
+            }
+
+            .ats-badge {
+                display: none;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<div class="resume-container">
+    <div class="resume-container">
 
-    <!-- ════════════════════════════════════════ HEADER ════════════════════════════════════════ -->
-    <header class="header">
-        <div class="header-row">
-            <div class="header-left">
-                <h1>Manoj Chaudhari</h1>
-            </div>
-            <div class="header-right">
-                <span class="headline">Pragmatic Engineering Leader</span>
-                <span>9890157519 ✦ Pune</span>
-                <span>manoj.s.chaudhari@gmail.com ✦ linkedin.com/in/manojschaudhari</span>
-            </div>
-        </div>
-    </header>
-
-    <div class="body">
-
-        <!-- ════════════════════ PROFESSIONAL SUMMARY ════════════════════ -->
-        <section class="section summary">
-            <h2>Professional Summary</h2>
-            <p>
-                Senior Hands-On Engineering Leader with 20+ years of experience designing, building, and 
-                scaling enterprise-grade distributed systems across capital markets, banking, and fintech domains. 
-                Deep expertise in Java, Spring Ecosystem, Microservices, Event-driven architectures, and Cloud-native platforms. 
-                Proven track record of leading high-performing engineering teams while remaining hands-on with system design, performance engineering, 
-                and production-grade code delivery. Adept at translating complex business requirements into resilient, observable, 
-                and high-throughput technical solutions across the full software development lifecycle.
-            </p>
-        </section>
-
-        <!-- ════════════════════ CORE COMPETENCIES ════════════════════ -->
-        <section class="section">
-            <h2>Core Competencies</h2>
-            <div class="skills-grid">
-                <span class="skill-category">Languages</span>
-                <span class="skill-values">Java (Expert), Python, SQL, PL/SQL, JavaScript, TypeScript</span>
-
-                <span class="skill-category">Backend</span>
-                <span class="skill-values">Spring Boot, Spring MVC, Spring Batch, Spring Cloud, Spring Security, Spring Data JPA, Hibernate, REST APIs, GraphQL, gRPC</span>
-
-                <span class="skill-category">Frontend</span>
-                <span class="skill-values">React, Angular, HTML5, CSS3, JavaScript ES6+</span>
-
-                <span class="skill-category">Data &amp; Streaming</span>
-                <span class="skill-values">Apache Kafka, Apache Spark, Apache Storm, Kafka Streams, Spring Kafka, Stream Processing, Batch Processing</span>
-
-                <span class="skill-category">Databases</span>
-                <span class="skill-values">Oracle, PostgreSQL, Snowflake, Couchbase, MongoDB, NoSQL, Redis, Elasticsearch</span>
-
-                <span class="skill-category">Cloud &amp; DevOps</span>
-                <span class="skill-values">AWS (EC2, S3, Lambda, RDS, CloudWatch), Docker, Jenkins, CI/CD, Ansible, Infrastructure as Code</span>
-
-                <span class="skill-category">Architecture</span>
-                <span class="skill-values">Microservices, Event-Driven Architecture, Domain-Driven Design, SOA, Data Mesh, Data Lake, Data Lakehouse, Cloud-Native Architecture, CQRS</span>
-
-                <span class="skill-category">Observability</span>
-                <span class="skill-values">Application Instrumentation, Profiling, Performance Tuning, Monitoring, Logging, Distributed Tracing</span>
-
-                <span class="skill-category">Practices</span>
-                <span class="skill-values">Agile, Scrum, Extreme Programming, DevOps, DataOps, TDD, Code Reviews, Technical Leadership, Cross-Functional Collaboration</span>
-            </div>
-        </section>
-
-        <!-- ════════════════════ PROFESSIONAL EXPERIENCE ════════════════════ -->
-        <section class="section">
-            <h2>Professional Experience</h2>
-
-            <!-- ── BNY Mellon ── -->
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Senior Vice President / Principal Backend Developer</span>
-                    <span class="job-date">Sept 2023 – March 2026</span>
-                </div>
-                <div class="job-company">BNY Mellon <span class="location">— Pune, India</span></div>
-                <ul>
-                    <li>Lead hands-on design and development of an Enterprise Data Lake platform, architecting scalable data ingestion pipelines processing terabytes of financial data daily using Java, Spring Boot, Kafka, and Spark.</li>
-                    <li>Engineered cloud-native data platform components on Azure with Snowflake integration, driving a large-scale migration of legacy batch workloads to modern stream and batch processing architectures.</li>
-                    <li>Established performance engineering practices including application instrumentation, JVM profiling, bottleneck analysis, and optimization — reducing P99 latency by 40% on critical data pipelines.</li>
-                    <li>Drove operational risk mitigation, resiliency patterns (circuit breakers, retry mechanisms, dead-letter queues), and regulatory readiness for enterprise data systems.</li>
-                    <li>Mentored and led a high-performing engineering team, conducting architecture reviews, enforcing coding standards, and championing engineering excellence through CI/CD, automated testing, and observability.</li>
-                </ul>
-            </div>
-
-            <!-- ── CLSA ── -->
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Associate Director / Senior Development Manager</span>
-                    <span class="job-date">May 2018 – Sept 2023</span>
-                </div>
-                <div class="job-company">CLSA Technology &amp; Services LLP <span class="location">— Pune, India</span></div>
-                <ul>
-                    <li>Led design and delivery of Cash Equities Middle Office Back Office (MOBO) Data platform, building digital and physical trade confirmation systems for equities post-trade processing using Java, Spring, and microservices.</li>
-                    <li>Built and managed market data and reference data platforms integrating Refinitiv, Bloomberg, Copp Clark, and real-time FX data feeds, ensuring sub-second data delivery to downstream trading systems.</li>
-                    <li>Engineered counterparty reference data services and SSI management integrations with DTCC ALERT and DTCC CTM for straight-through processing (STP) enablement.</li>
-                    <li>Managed cross-functional engineering teams across multiple workstreams, driving Agile transformation and delivery excellence for capital markets technology.</li>
-                    <li>Built corporate websites, mobile application backends, and digital marketing platform components, delivering full-stack solutions across multiple client projects.</li>
-                </ul>
-            </div>
-
-            <!-- ── Citi ── -->
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Assistant Vice President / Risk Developer</span>
-                    <span class="job-date">May 2013 – May 2018</span>
-                </div>
-                <div class="job-company">Citicorp Services India Limited <span class="location">— Pune, India</span></div>
-                <ul>
-                    <li>Designed and built a real-time risk computation platform for FX Options PAA Greeks using Apache Storm, Couchbase, and Spring-based Big Data frameworks, processing millions of risk calculations per second.</li>
-                    <li>Developed FCC (Futures Clearing and Collateral) and FXLM risk analysis applications using Java, Spring Boot, and Oracle, enabling real-time monitoring and alerting for regulatory risk scenarios.</li>
-                    <li>Implemented high-throughput event-driven architectures for trade lifecycle events, reducing risk computation latency from minutes to milliseconds.</li>
-                    <li>Collaborated with quantitative analysts and risk managers to translate complex financial models into production-grade Java services deployed across distributed compute clusters.</li>
-                </ul>
-            </div>
-
-            <!-- ── Loylogic ── -->
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Senior Software Engineer</span>
-                    <span class="job-date">Sept 2011 – April 2013</span>
-                </div>
-                <div class="job-company">Loylogic Technologies India <span class="location">— Pune, India</span></div>
-                <ul>
-                    <li>Developed PointsPay — a SOA-based loyalty reward redemption and payment platform using Java, Spring Batch, and RESTful web services, enabling seamless points-to-payment conversion for global airline loyalty programs.</li>
-                    <li>Designed batch processing workflows for high-volume transaction reconciliation and settlement, handling millions of loyalty transactions monthly.</li>
-                </ul>
-            </div>
-
-            <!-- ── SecurView ── -->
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Senior Software Engineer</span>
-                    <span class="job-date">June 2010 – August 2011</span>
-                </div>
-                <div class="job-company">SecurView Systems <span class="location">— Pune, India</span></div>
-                <ul>
-                    <li>Engineered CASPER — a multi-tenant SaaS platform for security information and event management (SIEM), developing core Java modules for log aggregation, threat correlation, and real-time alerting.</li>
-                    <li>Engineered scalable managed services infrastructure supporting multi-client deployments with tenant isolation and configurable security policies.</li>
-                </ul>
-            </div>
-
-            <!-- ── Oracle ── -->
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Associate Consultant</span>
-                    <span class="job-date">June 2007 – May 2010</span>
-                </div>
-                <div class="job-company">Oracle Financial Services Software Limited <span class="location">— Pune, India</span></div>
-                <ul>
-                    <li>Developed modules for Oracle Flexcube Private Banking — an enterprise wealth management platform supporting customer onboarding, 
-                        portfolio management, and transaction processing using Java, J2EE, Spring Batch and Oracle.</li>
-                    <li>Built and optimized PL/SQL stored procedures and complex reporting queries for high-volume banking transaction datasets.</li>
-                    <li>ISO-8583 messaging integration with real time payment processing with core banking application.</li>
-                </ul>
-            </div>
-
-            <!-- ── Agilisys ── -->
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Java Developer</span>
-                    <span class="job-date">Jan 2006 – May 2007</span>
-                </div>
-                <div class="job-company">Agilisys IT Services India Private Limited <span class="location">— Mumbai, India</span></div>
-                <ul>
-                    <li>Developed portals for Shopping.com partner website — an e-commerce comparison shopping platform — Based on Java, Servlets and JSP with Oracle database integration.</li>
+        <!-- ════════════════════════════════════════ HEADER ════════════════════════════════════════ -->
+        <header class="header">
+            <div class="header-row">
+                <div class="header-left">
+                    <h1>Manoj Chaudhari</h1>
                     
+                    
+                </div>
+                <div class="header-right">
+                    <span class="headline1" style="text-decoration: none; color1: var(--accent);">9890157519 ✦ PUNE ✦ <a href="https://linkedin.com/in/manojschaudhari" target="_blank" style="text-decoration: none; color1: var(--accent);">linkedin.com/in/manojschaudhari</a></span>
+                    <span class="headline1"><a href="mailto:manoj.s.chaudhari@gmail.com" style="text-decoration: none; color: var(--ink-secondary);">manoj.s.chaudhari@gmail.com</a></span>
+                    <!--<span class="headline">Pragmatic Engineer ✦ Delivery Leader ✦ Scalable Distributed Backend</span>-->
+                </div>
+            </div>
+            <br/>
+            <div class="headline" style="text-align: center;">Pragmatic Engineer • Delivery Leader • Scalable Distributed Backend • Data Management • Cloud Native </div>
+            <!--<br/>
+        <div class="header-right">
+        <span class="headline">Pragmatic Engineer ✦ Delivery Leader ✦ Scalable Distributed Backend ✦ Data ✦ Cloud-Native</span>
+        </div>-->
+
+        </header>
+
+        <div class="body">
+
+            <!-- ════════════════════ PROFESSIONAL SUMMARY ════════════════════ -->
+            <section class="section summary">
+                <h2>Professional Summary</h2>
+                <p>
+                    Senior Hands-On Engineering Leader with 20+ years of experience designing, building, and
+                    scaling enterprise-grade distributed systems across capital markets, banking, and fintech domains.
+                    Deep expertise in <u>Java</u>, <u>Spring</u> Ecosystem, <u>Microservices</u>, Event-driven architectures, and
+                    Cloud-native platforms.
+                    Proven track record of leading high-performing engineering teams while remaining hands-on with
+                    system design, performance engineering,
+                    and production-grade code delivery. Adept at translating complex business requirements into
+                    resilient, observable,
+                    and high-throughput technical solutions across the full software development lifecycle.
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                    Experience leveraging AI-assisted development and agentic AI tools such as GitHub Copilot, <u>Windsurf</u>,
+                    and Google Gemini.
+                </p>
+            </section>
+
+            <!-- ════════════════════ CORE COMPETENCIES ════════════════════ -->
+            <section class="section">
+                <h2>Core Competencies</h2>
+                <div class="skills-grid">
+                    <span class="skill-category">Languages</span>
+                    <span class="skill-values">Java (Expert), Python, SQL, PL/SQL, JavaScript, TypeScript</span>
+
+                    <span class="skill-category">Backend</span>
+                    <span class="skill-values">Spring Boot, Spring MVC, Spring Batch, Spring Cloud, Spring Security,
+                        Spring Data JPA, Hibernate, REST APIs, GraphQL, gRPC</span>
+
+                    <span class="skill-category">Frontend</span>
+                    <span class="skill-values">React, Angular, HTML5, CSS3, JavaScript ES6+</span>
+
+                    <span class="skill-category">Data &amp; Streaming</span>
+                    <span class="skill-values">Apache Kafka, Apache Spark, Apache Storm, Kafka Streams, Spring Kafka,
+                        Stream Processing, Batch Processing</span>
+
+                    <span class="skill-category">Databases</span>
+                    <span class="skill-values">Oracle, PostgreSQL, Snowflake, Couchbase, MongoDB, NoSQL, Redis,
+                        Elasticsearch</span>
+
+                    <span class="skill-category">Cloud &amp; DevOps</span>
+                    <span class="skill-values">AWS (EC2, S3, Lambda, RDS, CloudWatch), Docker, Jenkins, CI/CD, Ansible,
+                        Infrastructure as Code</span>
+
+                    <span class="skill-category">Architecture</span>
+                    <span class="skill-values">Microservices, Event-Driven Architecture, Domain-Driven Design, SOA, Data
+                        Mesh, Data Lake, Data Lakehouse, Cloud-Native Architecture, CQRS</span>
+
+                    <span class="skill-category">Observability</span>
+                    <span class="skill-values">Application Instrumentation, Profiling, Performance Tuning, Monitoring,
+                        Logging, Distributed Tracing</span>
+
+                    <span class="skill-category">Practices</span>
+                    <span class="skill-values">Agile, Scrum, Extreme Programming, DevOps, DataOps, TDD, Code Reviews,
+                        Technical Leadership, Cross-Functional Collaboration</span>
+                </div>
+            </section>
+
+            <!-- ════════════════════ PROFESSIONAL EXPERIENCE ════════════════════ -->
+            <section class="section">
+                <h2>Professional Experience</h2>
+
+                <!-- ── BNY Mellon ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Senior Vice President / Principal Backend Developer</span>
+                        <span class="job-date">Sept 2023 – March 2026</span>
+                    </div>
+                    <div class="job-company">BNY Mellon <span class="location">— Pune, India</span></div>
+                    <ul>
+                        <li>Lead hands-on design and development of an Enterprise Data Lake platform, architecting
+                            scalable data ingestion pipelines processing terabytes of financial data daily using Java,
+                            Spring Boot, Kafka, and Spark.</li>
+                        <li>Engineered cloud-native data platform components on Azure with Snowflake integration,
+                            driving a large-scale migration of legacy batch workloads to modern stream and batch
+                            processing architectures.</li>
+                        <li>Established performance engineering practices including application instrumentation, JVM
+                            profiling, bottleneck analysis, and optimization — reducing P99 latency by 40% on critical
+                            data pipelines.</li>
+                        <li>Drove operational risk mitigation, resiliency patterns (circuit breakers, retry mechanisms,
+                            dead-letter queues), and regulatory readiness for enterprise data systems.</li>
+                        <li>Mentored and led a high-performing engineering team, conducting architecture reviews,
+                            enforcing coding standards, and championing engineering excellence through CI/CD, automated
+                            testing, and observability.</li>
+                    </ul>
+                </div>
+
+                <!-- ── CLSA ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Associate Director / Senior Development Manager</span>
+                        <span class="job-date">May 2018 – Sept 2023</span>
+                    </div>
+                    <div class="job-company">CLSA Technology &amp; Services LLP <span class="location">— Pune,
+                            India</span></div>
+                    <ul>
+                        <li>Led design and delivery of Cash Equities Middle Office Back Office (MOBO) Data platform,
+                            building digital and physical trade confirmation systems for equities post-trade processing
+                            using Java, Spring, and microservices.</li>
+                        <li>Built and managed market data and reference data platforms integrating Refinitiv, Bloomberg,
+                            Copp Clark, and real-time FX data feeds, ensuring sub-second data delivery to downstream
+                            trading systems.</li>
+                        <li>Engineered counterparty reference data services and SSI management integrations with DTCC
+                            ALERT and DTCC CTM for straight-through processing (STP) enablement.</li>
+                        <li>Managed cross-functional engineering teams across multiple workstreams, driving Agile
+                            transformation and delivery excellence for capital markets technology.</li>
+                        <li>Built corporate websites, mobile application backends, and digital marketing platform
+                            components, delivering full-stack solutions across multiple client projects.</li>
+                    </ul>
+                </div>
+
+                <!-- ── Citi ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Assistant Vice President / Risk Developer</span>
+                        <span class="job-date">May 2013 – May 2018</span>
+                    </div>
+                    <div class="job-company">Citicorp Services India Limited <span class="location">— Pune, India</span>
+                    </div>
+                    <ul>
+                        <li>Designed and built a real-time risk computation platform for FX Options PAA Greeks using
+                            Apache Storm, Couchbase, and Spring-based Big Data frameworks, processing millions of risk
+                            calculations per second.</li>
+                        <li>Developed FCC (Futures Clearing and Collateral) and FXLM risk analysis applications using
+                            Java, Spring Boot, and Oracle, enabling real-time monitoring and alerting for regulatory
+                            risk scenarios.</li>
+                        <li>Implemented high-throughput event-driven architectures for trade lifecycle events, reducing
+                            risk computation latency from minutes to milliseconds.</li>
+                        <li>Collaborated with quantitative analysts and risk managers to translate complex financial
+                            models into production-grade Java services deployed across distributed compute clusters.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ── Loylogic ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Senior Software Engineer</span>
+                        <span class="job-date">Sept 2011 – April 2013</span>
+                    </div>
+                    <div class="job-company">Loylogic Technologies India <span class="location">— Pune, India</span>
+                    </div>
+                    <ul>
+                        <li>Developed PointsPay — a SOA-based loyalty reward redemption and payment platform using Java,
+                            Spring Batch, and RESTful web services, enabling seamless points-to-payment conversion for
+                            global airline loyalty programs.</li>
+                        <li>Designed batch processing workflows for high-volume transaction reconciliation and
+                            settlement, handling millions of loyalty transactions monthly.</li>
+                    </ul>
+                </div>
+
+                <!-- ── SecurView ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Senior Software Engineer</span>
+                        <span class="job-date">June 2010 – August 2011</span>
+                    </div>
+                    <div class="job-company">SecurView Systems <span class="location">— Pune, India</span></div>
+                    <ul>
+                        <li>Engineered CASPER — a multi-tenant SaaS platform for security information and event
+                            management (SIEM), developing core Java modules for log aggregation, threat correlation, and
+                            real-time alerting.</li>
+                        <li>Engineered scalable managed services infrastructure supporting multi-client deployments with
+                            tenant isolation and configurable security policies.</li>
+                    </ul>
+                </div>
+
+                <!-- ── Oracle ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Associate Consultant</span>
+                        <span class="job-date">June 2007 – May 2010</span>
+                    </div>
+                    <div class="job-company">Oracle Financial Services Software Limited <span class="location">— Pune,
+                            India</span></div>
+                    <ul>
+                        <li>Developed modules for Oracle Flexcube Private Banking — an enterprise wealth management
+                            platform supporting customer onboarding,
+                            portfolio management, and transaction processing using Java, J2EE, Spring Batch and Oracle.
+                        </li>
+                        <li>Built and optimized PL/SQL stored procedures and complex reporting queries for high-volume
+                            banking transaction datasets.</li>
+                        <li>ISO-8583 messaging integration with real time payment processing with core banking
+                            application.</li>
+                    </ul>
+                </div>
+
+                <!-- ── Agilisys ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Java Developer</span>
+                        <span class="job-date">Jan 2006 – May 2007</span>
+                    </div>
+                    <div class="job-company">Agilisys IT Services India Private Limited <span class="location">— Mumbai,
+                            India</span></div>
+                    <ul>
+                        <li>Developed portals for Shopping.com partner website — an e-commerce comparison shopping
+                            platform — Based on Java, Servlets and JSP with Oracle database integration.</li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ════════════════════ KEY ACHIEVEMENTS ════════════════════ -->
+            <section class="section">
+                <h2>Key Achievements</h2>
+                <ul class="cert-list">
+                    <li>Architected enterprise-scale Data Lake and domain-driven Data Mesh platforms processing
+                        petabytes of financial data on Snowflake and Big Data ecosystems with strong operational risk
+                        and regulatory readiness.</li>
+                    <li>Delivered real-time risk systems using Apache Storm, Couchbase, and Spring — computing FX
+                        Options PAA Greeks in real time for one of the world's largest financial institutions.</li>
+                    <li>Led cloud transformation initiatives migrating mission-critical business processes to AWS,
+                        reducing infrastructure cost by 35% and improving system availability to 99.95%.</li>
+                    <li>Built end-to-end post-trade systems for Cash Equities and OTC Derivatives, integrating DTCC CTM,
+                        DTCC ALERT, and multi-currency clearing and payment platforms.</li>
+                    <li>Established performance engineering culture — instrumenting applications, profiling JVM,
+                        identifying bottlenecks, and achieving measurable latency reductions across critical trading
+                        platforms.</li>
+                    <li>Designed and delivered multi-tenant SaaS platforms, SOA-based enterprise solutions, and private
+                        banking systems serving thousands of users globally.</li>
+                    <li>Scaled <u>Platform Operating Model</u> (POM) across Data Lake Resiliency teams, increasing delivery velocity, strengthening ownership, and improving platform stability.</li>
                 </ul>
-            </div>
-        </section>
+            </section>
 
-        <!-- ════════════════════ KEY ACHIEVEMENTS ════════════════════ -->
-        <section class="section">
-            <h2>Key Achievements</h2>
-            <ul class="cert-list">
-                <li>Architected enterprise-scale Data Lake and domain-driven Data Mesh platforms processing petabytes of financial data on Snowflake and Big Data ecosystems with strong operational risk and regulatory readiness.</li>
-                <li>Delivered real-time risk systems using Apache Storm, Couchbase, and Spring — computing FX Options PAA Greeks in real time for one of the world's largest financial institutions.</li>
-                <li>Led cloud transformation initiatives migrating mission-critical business processes to AWS, reducing infrastructure cost by 35% and improving system availability to 99.95%.</li>
-                <li>Built end-to-end post-trade systems for Cash Equities and OTC Derivatives, integrating DTCC CTM, DTCC ALERT, and multi-currency clearing and payment platforms.</li>
-                <li>Established performance engineering culture — instrumenting applications, profiling JVM, identifying bottlenecks, and achieving measurable latency reductions across critical trading platforms.</li>
-                <li>Designed and delivered multi-tenant SaaS platforms, SOA-based enterprise solutions, and private banking systems serving thousands of users globally.</li>
-            </ul>
-        </section>
+            <!-- ════════════════════ EDUCATION ════════════════════ -->
+            <section class="section">
+                <h2>Education</h2>
+                <div class="edu-entry">
+                    <span class="edu-degree">Bachelor of Engineering in Computer</span>
+                    <span class="edu-year">2005</span>
+                </div>
+                <!-- <div class="edu-school">University of Pune</div> -->
+            </section>
 
-        <!-- ════════════════════ EDUCATION ════════════════════ -->
-        <section class="section">
-            <h2>Education</h2>
-            <div class="edu-entry">
-                <span class="edu-degree">Bachelor of Engineering in Computer</span>
-                <span class="edu-year">2005</span>
-            </div>
-            <!-- <div class="edu-school">University of Pune</div> -->
-        </section>
-
+        </div>
     </div>
-</div>
 
 </body>
+
 </html>
