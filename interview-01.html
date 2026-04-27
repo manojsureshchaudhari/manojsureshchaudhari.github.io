@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://manojsureshchaudhari.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manoj Chaudhari</title>
+    <link href="./manoj_chaudhari_resume (4)_files/css2" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a1a2e;
+            --ink-secondary: #3d3d5c;
+            --ink-muted: #6b6b8a;
+            --accent: #0f4c75;
+            --accent-light: #e8f0f7;
+            --border: #d1d5db;
+            --bg: #ffffff;
+            --section-gap: 22px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 14mm 0;
+        }
+
+        @page :first {
+            margin-top: 0;
+        }
+
+        body {
+            font-family: 'DM Sans', 'Segoe UI', Helvetica, sans-serif;
+            color: var(--ink);
+            background: #f0f0f0;
+            line-height: 1.5;
+            font-size: 13.5px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 30px auto;
+            background: var(--bg);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 2px;
+        }
+
+        /* ── HEADER ── */
+        .header {
+            padding: 28px 52px 20px;
+            border-bottom: 3px solid var(--accent);
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 52px;
+            width: 120px;
+            height: 3px;
+            background: #e8443a;
+        }
+
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .header-left {
+            flex: 1;
+        }
+
+        .header-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 3px;
+            font-size: 12.5px;
+            color: var(--ink-secondary);
+            white-space: nowrap;
+            padding-top: 4px;
+        }
+
+        h1 {
+            font-family: 'Source Serif 4', 'Georgia', serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: -0.3px;
+            margin-bottom: 4px;
+        }
+
+        .headline {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--accent);
+            letter-spacing: 0.1px;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 6px 20px;
+            font-size: 12.5px;
+            color: var(--ink-secondary);
+        }
+
+        .contact-row span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-row .dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--ink-muted);
+            display: inline-block;
+        }
+
+        /* ── BODY ── */
+        .body {
+            padding: 30px 52px 44px;
+        }
+
+        /* ── SECTIONS ── */
+        .section {
+            margin-bottom: var(--section-gap);
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            color: var(--accent);
+            padding-bottom: 7px;
+            border-bottom: 1.5px solid var(--border);
+            margin-bottom: 14px;
+        }
+
+        /* ── SUMMARY ── */
+        .summary p {
+            color: var(--ink-secondary);
+            font-size: 13.5px;
+            line-height: 1.65;
+        }
+
+        /* ── SKILLS ── */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 152px 1fr;
+            gap: 8px 0;
+            font-size: 13px;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: var(--ink);
+            padding-top: 1px;
+        }
+
+        .skill-values {
+            color: var(--ink-secondary);
+            line-height: 1.6;
+        }
+
+        /* ── EXPERIENCE ── */
+        .job {
+            margin-bottom: 18px;
+        }
+
+        .job:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 2px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 14.5px;
+            color: var(--ink);
+        }
+
+        .job-date {
+            font-size: 12.5px;
+            color: var(--ink-muted);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .job-company {
+            font-size: 13.5px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .job-company .location {
+            font-weight: 400;
+            color: var(--ink-muted);
+        }
+
+        .job ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .job li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 4px;
+            color: var(--ink-secondary);
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .job li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 11px;
+            top: 1px;
+        }
+
+        /* ── EDUCATION ── */
+        .edu-entry {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .edu-degree {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--ink);
+        }
+
+        .edu-year {
+            font-size: 12.5px;
+            color: var(--ink-muted);
+        }
+
+        .edu-school {
+            color: var(--ink-secondary);
+            font-size: 13px;
+            margin-top: 1px;
+        }
+
+        /* ── CERTIFICATIONS / EXTRAS ── */
+        .cert-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cert-list li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 4px;
+            color: var(--ink-secondary);
+            font-size: 13px;
+            line-height: 1.55;
+        }
+
+        .cert-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 11px;
+            top: 1px;
+        }
+
+        /* ── ATS SCORE BADGE (for visual only) ── */
+        .ats-badge {
+            margin-top: 36px;
+            padding: 18px 24px;
+            background: var(--accent-light);
+            border-left: 4px solid var(--accent);
+            border-radius: 0 6px 6px 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .ats-score-ring {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: 4px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .ats-details h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 3px;
+        }
+
+        .ats-details p {
+            font-size: 12px;
+            color: var(--ink-muted);
+            line-height: 1.5;
+        }
+
+        .ats-checks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 14px;
+            margin-top: 6px;
+            font-size: 11.5px;
+            color: var(--ink-secondary);
+        }
+
+        .ats-checks span::before {
+            content: '✓ ';
+            color: #16a34a;
+            font-weight: 700;
+        }
+
+        /* ── PRINT ── */
+        @media print {
+
+            html,
+            body {
+                background: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                font-family: Arial;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+                border-radius: 0;
+                width: 100%;
+            }
+
+            .header {
+                padding: 24px 36px 18px;
+            }
+
+            .body {
+                padding: 20px 36px 28px;
+            }
+
+            .ats-badge {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resume-container">
+
+        <!-- ════════════════════════════════════════ HEADER ════════════════════════════════════════ -->
+        <header class="header">
+            <div class="header-row">
+                <div class="header-left">
+                    <h1>Manoj Chaudhari</h1>
+                    <div style="margin-top:15px;color: var(--ink-secondary);"> Architecture − System Design − Java − Data − Cloud − Engineering </div>
+                </div>
+                <div class="header-right">
+
+<span class="headline1" style="text-decoration: none; color1: var(--accent);">9270207519 − PUNE </span>
+                    
+                    <span class="headline1"><a href="mailto:manoj.s.chaudhari@gmail.com" style="text-decoration: none; color: var(--ink-secondary);">manoj.suresh.chaudhari@gmail.com</a></span>
+
+
+<span class="headline1" style="text-decoration: none; color1: var(--accent);"> <a href="https://linkedin.com/in/manojschaudhari" target="_blank" style="text-decoration: none; color: var(--ink-secondary);">linkedin.com/in/manojschaudhari</a></span>
+
+                    <!--<span class="headline">Pragmatic Engineer ✦ Delivery Leader ✦ Scalable Distributed Backend</span>-->
+                </div>
+            </div>
+
+<!)0Architecture - System Design - Engineering -->
+            <!--<br>
+            <div class="headline" style="text-align: center;">Principal Engineer with two decades of experience designing large-scale backend systems <br/> distributed platforms
+ and enterprise data ecosystems</div>
+            <br/>
+        <div class="header-right">
+        <span class="headline" style="text-align: center;">Pragmatic Engineer ✦ Delivery Leader ✦ Scalable Distributed Backend ✦ Data ✦ Cloud-Native</span>
+        </div>-->
+
+        </header>
+
+        <div class="body">
+
+            <!-- ════════════════════ PROFESSIONAL SUMMARY ════════════════════ -->
+            <section class="section summary">
+                <h2>Professional Summary</h2>
+                <!--<p>A career in distributed systems, built for the world's financial institutions.</p>-->
+                <p style="padding-tops: 8px;">
+Principal Engineer with two decades of experience designing large-scale backend systems, distributed platforms, enterprise data ecosystems. 
+Experience leveraging AI-assisted development and agentic AI tools such as Copilot and <u>Windsurf</u>.
+                </p>
+                <!--<p style="padding-top: 8px;">
+                    Experience leveraging AI-assisted development and agentic AI tools such as GitHub Copilot, <u>Windsurf</u>,
+                    and Google Gemini.
+                </p>-->
+            </section>
+
+            <!-- ════════════════════ CORE COMPETENCIES ════════════════════ -->
+            <section class="section">
+                <h2>Core Competencies</h2>
+                <div class="skills-grid">
+
+                    <span class="skill-category">Technologies</span>
+                    <span class="skill-values"><u>Java</u>, Spring, Kafka, React, Angular, Oracle, Postgres, Python, AWS, Jenkins </span>
+
+                    <span class="skill-category">Architecture</span>
+                    <span class="skill-values">Microservices, Event-Driven Architecture, Domain-Driven Design, SOA, Data Mesh, Data Lake, Data Lakehouse, <u>Cloud-Native</u> Architecture, CQRS</span>
+
+                    <span class="skill-category">Observability</span>
+                    <span class="skill-values">Application Instrumentation, Profiling, Performance Tuning, Monitoring, Logging, Distributed Tracing</span>
+
+                    <span class="skill-category">Practices</span>
+                    <span class="skill-values">Agile, Scrum, Extreme Programming, DevOps, DataOps, TDD, Code Reviews, Technical Leadership, Cross-Functional Collaboration</span>
+
+<span class="skill-category">Domains</span>
+                    <span class="skill-values">Capital Markets & Post-Trade, FX & Derivatives Risk, Enterprise Data Platforms, Wealth & Private Banking, Loyalty & Payments, SaaS & Multi-Tenant, E-Commerce</span>
+
+                </div>
+
+
+
+
+
+            </section>
+
+            <!-- ════════════════════ PROFESSIONAL EXPERIENCE ════════════════════ - Twenty years, seven institutions-->
+            <section class="section">
+                <h2>Professional Experience  </h2> 
+
+                <!-- ── BNY Mellon ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Enterprise Data Lake · Principal Engineer</span>
+                        <span class="job-date">Sept 2023 – March 2026</span>
+                    </div>
+                    <div class="job-company">BNY Mellon, Pune</div>
+                    <ul>
+                        <li>Lead hands-on design and development of an Enterprise Data Lake platform, architecting
+                            scalable data ingestion pipelines processing terabytes of financial data daily using Java,
+                            Spring Boot, Kafka, and Spark.</li>
+                        <li>Engineered cloud-native data platform components on Azure with Snowflake integration,
+                            driving a large-scale migration of legacy batch workloads to modern stream and batch
+                            processing architectures.</li>
+                        <li>Established performance engineering practices including application instrumentation, JVM
+                            profiling, bottleneck analysis, and optimization - reducing P99 latency by 40% on critical
+                            data pipelines.</li>
+                        <li>Drove operational risk mitigation, resiliency patterns (circuit breakers, retry mechanisms,
+                            dead-letter queues), and regulatory readiness for enterprise data systems.</li>
+                        <li>Mentored and led a high-performing engineering team, conducting architecture reviews,
+                            enforcing coding standards, and championing engineering excellence through CI/CD, automated
+                            testing, and observability.</li>
+                    </ul>
+                </div>
+
+                <!-- ── CLSA ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Cash Equities MOBO & Data · Lead Engineer</span>
+                        <span class="job-date">May 2018 – Sept 2023</span>
+                    </div>
+                    <div class="job-company">CLSA, Pune</div>
+                    <ul>
+                        <li>Led design and delivery of Cash Equities Middle Office Back Office (MOBO) Data platform,
+                            building digital and physical trade confirmation systems for equities post-trade processing
+                            using Java, Spring, and microservices.</li>
+                        <li>Built and managed market data and reference data platforms integrating Refinitiv, Bloomberg,
+                            Copp Clark, and real-time FX data feeds, ensuring sub-second data delivery to downstream
+                            trading systems.</li>
+                        <li>Engineered counterparty reference data services and SSI management integrations with DTCC
+                            ALERT and DTCC CTM for straight-through processing (STP) enablement.</li>
+                        <li>Managed cross-functional engineering teams across multiple workstreams, driving Agile
+                            transformation and delivery excellence for capital markets technology.</li>
+                        <li>Built corporate websites, mobile application backends, and digital marketing platform
+                            components, delivering full-stack solutions across multiple client projects.</li>
+                    </ul>
+                </div>
+
+                <!-- ── Citi ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Foreign Exchange & Local Markets (FXLM) · Senior Engineer</span>
+                        <span class="job-date">May 2013 – May 2018</span>
+                    </div>
+                    <div class="job-company">Citicorp, Pune</div>
+                    <ul>
+                        <li>Designed and built a real-time risk computation platform for FX Options PAA Greeks using
+                            Apache Storm, Couchbase, and Spring-based Big Data frameworks, processing millions of risk
+                            calculations per second.</li>
+                        <li>Developed FCC (Futures Clearing and Collateral) and FXLM risk analysis applications using
+                            Java, Spring Boot, and Oracle, enabling real-time monitoring and alerting for regulatory
+                            risk scenarios.</li>
+                        <li>Implemented high-throughput event-driven architectures for trade lifecycle events, reducing
+                            risk computation latency from minutes to milliseconds.</li>
+                        <li>Collaborated with quantitative analysts and risk managers to translate complex financial
+                            models into production-grade Java services deployed across distributed compute clusters.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ── Loylogic ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">PointsPay · Senior Developer</span>
+                        <span class="job-date">Sept 2011 – April 2013</span>
+                    </div>
+                    <div class="job-company">Loylogic, Pune</div>
+                    <ul>
+                        <li>Delivered PointsPay - a SOA-based loyalty reward redemption and payment platform using Java,
+                            Spring Batch, and RESTful web services, enabling seamless points-to-payment conversion for
+                            global airline loyalty programs.</li>
+                        <li>Designed batch processing workflows for high-volume transaction reconciliation and
+                            settlement, handling millions of loyalty transactions monthly.</li>
+                    </ul>
+                </div>
+
+                <!-- ── SecurView ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">CASPER SaaS Platform · Developer</span>
+                        <span class="job-date">June 2010 – August 2011</span>
+                    </div>
+                    <div class="job-company">SecurView, Pune</div>
+                    <ul>
+                        <li>Engineered CASPER - a multi-tenant SaaS platform for security information and event
+                            management (SIEM), developing core Java modules for log aggregation, threat correlation, and
+                            real-time alerting.</li>
+                        <li>Engineered scalable managed services infrastructure supporting multi-client deployments with
+                            tenant isolation and configurable security policies.</li>
+                    </ul>
+                </div>
+
+                <!-- ── Oracle ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Flexcube Private Banking · Developer</span>
+                        <span class="job-date">June 2007 – May 2010</span>
+                    </div>
+                    <div class="job-company">Oracle, Pune</div>
+                    <ul>
+                        <li>Developed modules for Oracle Flexcube Private Banking - an enterprise wealth management
+                            platform supporting customer onboarding,
+                            portfolio management, and transaction processing using Java, J2EE, Spring Batch and Oracle.
+                        </li>
+                        <li>Built and optimized PL/SQL stored procedures and complex reporting queries for high-volume
+                            banking transaction datasets.</li>
+                        <li>ISO-8583 messaging integration with real time payment processing with core banking
+                            application.</li>
+                    </ul>
+                </div>
+
+                <!-- ── Agilisys ── -->
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">E-Commerce · Software Engineer</span>
+                        <span class="job-date">Jan 2006 – May 2007</span>
+                    </div>
+                    <div class="job-company">Agilisys, Mumbai</div>
+                    <ul>
+                        <li>Developed portals for the Shopping.com partner website - an e-commerce comparison-shopping platform - on Java, Servlets, JSP and Oracle.</li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ════════════════════ KEY ACHIEVEMENTS ════════════════════ -->
+            <section class="section">
+                <h2>Key Achievements</h2>
+                <ul class="cert-list">
+                    <li>Architected enterprise-scale Data Lake and domain-driven Data Mesh platforms processing
+                        petabytes of financial data on Snowflake and Big Data ecosystems with strong operational risk
+                        and regulatory readiness.</li>
+                    <li>Delivered real-time risk systems using Apache Storm, Couchbase, and Spring - computing FX
+                        Options PAA Greeks in real time for one of the world's largest financial institutions.</li>
+                    <li>Led cloud transformation initiatives migrating mission-critical business processes to AWS,
+                        reducing infrastructure cost by 35% and improving system availability to 99.95%.</li>
+                    <li>Built end-to-end post-trade systems for Cash Equities and OTC Derivatives, integrating DTCC CTM,
+                        DTCC ALERT, and multi-currency clearing and payment platforms.</li>
+                    <li>Established performance engineering culture - instrumenting applications, profiling JVM,
+                        identifying bottlenecks, and achieving measurable latency reductions across critical trading
+                        platforms.</li>
+                    <li>Designed and delivered multi-tenant SaaS platforms, SOA-based enterprise solutions, and private
+                        banking systems serving thousands of users globally.</li>
+                    <li>Scaled <u>Platform Operating Model</u> (POM) across Data Lake Resiliency teams, increasing delivery velocity, strengthening ownership and improving platform stability.</li>
+                </ul>
+            </section>
+
+            <!-- ════════════════════ EDUCATION ════════════════════ 
+
+
+Enterprise Data Lake & domain-driven Data Mesh on Snowflake processing petabyte-scale financial data.
+Real-time FX Options PAA Greeks risk on Apache Storm, Couchbase and Spring.
+Cloud transformation to AWS — 35% infrastructure cost reduction, 99.95% availability.
+End-to-end post-trade for Cash Equities and OTC Derivatives with DTCC CTM and ALERT.
+OTC derivatives clearing and multi-currency payment platforms.
+Multi-tenant SaaS SIEM, SOA reward redemption, private banking and wealth platforms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+            <section class="section">
+                <h2>Education</h2>
+                <div class="edu-entry">
+                    <span class="edu-degree">Bachelor of Engineering in Computer</span>
+                    <span class="edu-year">2005</span>
+                </div>
+                <!-- <div class="edu-school">University of Pune</div> -->
+            </section>
+
+        </div>
+    </div>
+
+
+
+
+</body></html>
